@@ -48,7 +48,10 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">CVIP: Consistent Video Editing with Inference-time Processing</h1>
+          <h1 class="title is-2 publication-title">CVIP: Consistent Video Editing with
+            Inference-time Processing — A Training-Free
+            Motion-Adaptive and Corrective Framework for
+            Synthetic Traffic Video Generation</h1>
         </div>
       </div>
     </div>
@@ -63,6 +66,19 @@
         <div class="content has-text-justified">
           
           <p>
+            Access to large-scale, annotated traffic surveillance data is critical for developing intelligent sensing systems in transportation. 
+          However, due to privacy and regulatory concerns, traffic video data is often sensitive and cannot be shared publicly in its entirety. 
+          This creates a pressing need for synthetic data generation to enrich training datasets while maintaining ethical and legal constraints.
+          Among generative approaches, video editing methods—such as inserting new vehicles into existing footage—offer high potential.
+          However, these methods often fail in scenarios involving large object displacements or fast-moving vehicles, leading to visual artifacts, 
+          spatial distortions, and temporal inconsistencies. To address this challenge, we propose a training-free video editing 
+          framework specifically designed for generating synthetic traffic videos. Our method introduces two core components: 
+          a non-linear adaptive scale guidance mechanism that adjusts denoising strength based on motion magnitude, and a 
+          correction step that blends multiple predictions to reduce accumulated sampling errors. 
+          Together, these modules enhance motion-aware synthesis, preserve object structure, and improve temporal smoothness—all at inference time, 
+          without requiring model fine-tuning. 
+          Experimental results on vehicle insertion tasks show that our framework outperforms the baseline method in both visual fidelity and temporal consistency. 
+          This work contributes a practical solution for generating high-quality synthetic traffic data, supporting the advancement of sensor-based surveillance and intelligent transportation systems under data-limited conditions.
         </p>
           
         </div>
